@@ -1,0 +1,324 @@
+body{
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+header{
+    background-color: white;
+    padding: 10px;
+}
+
+header h1{
+    font-size: 30px;
+    text-align: center;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+}
+header li{
+    gap: 10px;
+    cursor: pointer;
+    
+}
+
+header a{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header li:hover{
+    transform: scale(1.1);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.first{
+    max-width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    background-image: url("https://img.freepik.com/premium-photo/chocolate-cookies-chocolate-chip-cookies-shot_453790-1710.jpg?w=1380");
+    background-repeat: repeat-x;
+    padding: 20px;
+    text-align: start;
+
+}
+.first a{
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+}
+.first p{
+    color: black;
+    font-size: 16px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grids{
+    padding-top: 30px;
+    margin: 10px;
+}
+.grids span{
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: karla;
+
+}
+.grids a{
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.second-main{
+    display: block;
+    background-color: #f5ecea;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.head{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: 40px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    width: 40%;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+
+
+.grid img:hover{
+    transform: scale(1.1);
+}
+
+.text-video{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 20px;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px;
+    gap: 20px;
+}
+
+.video a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.video a:hover{
+    color: hwb(330 64% 29%);
+}
+
+
+.video span{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: left;
+
+}
+
+video iframe{
+    width: 100%;
+    height: auto;
+}
+
+.videos{
+    margin-bottom: 20px;
+}
+
+.book-info{
+    background-color: #f5ecea;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.book-heading{
+    text-align: center;
+    padding: 20px;
+
+}
+.book-heading a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.book-span{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 35px;
+    text-align: left;
+    margin: 20px;
+    font-size: 15px;
+    line-height: 1.6;
+    gap: 40px;
+}
+
+.book-span a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.footer-head{
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+    font-family: inherit;
+}
+
+
+.footer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    padding: 40px;
+    margin: 20px;
+    gap: 40px;
+}
+
+.footer a{
+    font-size: 20px;
+    padding: 10px;
+
+}
+.footer span{
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+
+
+.footer a:hover{
+    color: hwb(330 64% 29%);
+}
+
+
+.footer-picture{
+    background-color:#f5ecea;
+    margin-top: 20px;
+    padding: 40px;
+}
+
+
+.text-div{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.span-div{
+    display: flex;
+    font-size: 17px;
+    justify-content: center;
+    gap: 40px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+    .five-grid,.six-grid,.seven-grid,.eight-grid,.nine-grid,.ten-grid{
+        display: none;
+    }
+}
+
+@media (min-width:961px) and (max-width:1059px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr;
+    }
+}
+
+@media  (min-width:200px) and (max-width:1000px) {
+    .main{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        font-size: 15px;
+        width: 100%;
+    }
+    
+}
+
+@media (min-width:651px) and (max-width:981px) {
+    .video-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    .third-video{
+        display: none;
+    }
+}
+
+
+@media (max-width:650px) {
+    .video-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:340px){
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:610px){
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
